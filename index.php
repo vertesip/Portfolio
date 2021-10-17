@@ -18,9 +18,9 @@
         <div class="bio-wrapper">
             <div>
                 <img data-aos="fade-right" class="wp-image-21" src="images/IMG_9850.JPG" alt="">
-                <p data-aos="fade-right" class="bio-text">I'm currently a Web Developer and System Administrator at
-                    Effix-Marketing building websites and applications for the web with awesome people. In my off time I
-                    usually work on freelance websites and build 8-16 bit games.</p>
+                <p data-aos="fade-right" class="bio-text">I'm currently a PHP Fullstack Developer at
+                    zooplus building applications for the web with awesome people. In my off time I
+                    usually work on VST plugins and build 8-16 bit games.</p>
                 <br>
                 <p data-aos="fade-right" class="bio-text">Combining both my frontend and backend knowledge, I can
                     provide a whole solution for any given problem. My goal is always to build applications that are
