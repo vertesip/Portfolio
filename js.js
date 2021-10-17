@@ -1,6 +1,5 @@
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/particles.json', function () {
-    console.log('callback - particles.js config loaded');
 });
 
 $(document).ready(function () {
@@ -96,26 +95,35 @@ $(window).on('load', function () { // makes sure the whole site is loaded
     $('body').delay(350).css({'overflow': 'visible'});
 })
 
-$(window).scroll(function (event) {
-    if ($(this).scrollTop() == 0 && $('.top-menu-container').css('display') == 'none') {
-        $('.nav').removeClass('navactive');
-        $('.logo').removeClass('logo-active');
-        $('.line').removeClass('lineactive');
-    } else if ($(this).scrollTop() > 10) {
-        if (!$('.logo').hasClass("logo-active")) {
-            $('.nav').addClass('navactive');
-            $('.logo').addClass('logo-active');
-            $('.line').addClass('lineactive');
+if(window.innerWidth >= 800) {
+    $(window).scroll(function (event) {
+        if ($(this).scrollTop() == 0) {
+            $('.nav').removeClass('navactive');
+            $('.logo').removeClass('logo-active');
+            $('.line').removeClass('lineactive');
+        } else if ($(this).scrollTop() > 10) {
+            if (!$('.logo').hasClass("logo-active")) {
+                $('.nav').addClass('navactive');
+                $('.logo').addClass('logo-active');
+                $('.line').addClass('lineactive');
+            }
         }
-    }
-});
-
-$('.button').click(function () {
-    $('.overlay').show();
-})
-$('.close').click(function () {
-    $('.overlay').hide();
-})
+    });
+} else {
+    $(window).scroll(function (event){
+        if ($(this).scrollTop() == 0 && $('.top-menu-container').css('display') == 'none'){
+            $('.nav').removeClass('navactive');
+            $('.logo').removeClass('logo-active');
+            $('.line').removeClass('lineactive');
+        } else if ($(this).scrollTop() > 10) {
+            if (!$('.logo').hasClass("logo-active")) {
+                $('.nav').addClass('navactive');
+                $('.logo').addClass('logo-active');
+                $('.line').addClass('lineactive');
+            }
+        }
+    });
+}
 
 function workTab(evt, workName) {
     // Declare all variables
@@ -150,7 +158,6 @@ if ($(window).width() <= 800) {
     const menuElement = document.querySelectorAll("#menu-main-menu > a")
     for (let i = 0; i < menuElement.length; i++) {
         menuElement[i].addEventListener('click', () => {
-            console.log('clicked')
             navbar.classList.toggle("change");
             $('header .top-menu-container').fadeOut();
         });

@@ -160,14 +160,25 @@
         </div>
         <div class="work-experience-wrapper">
             <h3 data-aos="fade-left">Work</h3>
+            <a href="http://zooplus.com" target="_blank">
+                <div class="experience-inner">
+                    <img data-aos="fade-left"
+                         src="images/zooplus.png">
+                    <div class="experience-inner-inner">
+                        <h3 data-aos="fade-left">PHP Fullstack Developer</h3>
+                        <b data-aos="fade-left">zooplus AG - Full Time</b>
+                        <p data-aos="fade-left">October 2021 - Present</p>
+                    </div>
+                </div>
+            </a>
             <a href="http://effix.hu" target="_blank">
                 <div class="experience-inner">
                     <img data-aos="fade-left"
                          src="images/EffixLogo.png">
                     <div class="experience-inner-inner">
-                        <h3 data-aos="fade-left">Web-Developer</h3>
+                        <h3 data-aos="fade-left">Web Developer & System Administrator</h3>
                         <b data-aos="fade-left">EFFIX-Marketing Ltd. - Full Time</b>
-                        <p data-aos="fade-left">March 2020 - Present</p>
+                        <p data-aos="fade-left">March 2020 - September 2021</p>
                     </div>
                 </div>
             </a>

@@ -9,6 +9,7 @@ body {
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding-top: 40px;
 }
 
 canvas {
@@ -709,7 +710,6 @@ textarea {
 
 .school-experience-wrapper {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -862,7 +862,17 @@ textarea {
 
 }
 
+@media screen and (min-width: 801px) {
+    header .top-menu-bar {
+        display: flex !important;
+    }
+    .top-menu-container{
+        display: flex !important;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    
     #menu-main-menu {
         text-align: center;
         max-height: calc(100vh - 50px);
